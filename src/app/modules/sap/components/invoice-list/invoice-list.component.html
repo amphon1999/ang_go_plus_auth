@@ -1,0 +1,103 @@
+<div class="content-wrapper">
+  <section class="content-header">
+    <div class="container-fluid">
+      <div class="row mb-2">
+        <div class="col-sm-6">
+          <h1>Invoice Lists</h1>
+        </div>
+        <div class="col-sm-6">
+          <ol class="breadcrumb float-sm-right">
+            <li class="breadcrumb-item"><a href="#">Home</a></li>
+            <li class="breadcrumb-item active">Invoice Lists</li>
+          </ol>
+        </div>
+      </div>
+    </div><!-- /.container-fluid -->
+  </section>
+
+
+
+  <!-- Main content -->
+  <div class="card" style="width: 100%;">
+
+    <h3 class="card-title" style="padding: 20px;"> {{sumInv | number}}</h3>
+    <div class="card-body">
+
+      
+      <div class="grid" style="width: 100%; font-size: 12px;">
+        <p>
+          <a href="#" class="select"><i class="fa fa-fw fa-filter right-4"></i>Filter</a>
+          <select class="select">
+            <option value="Status All">Status All</option>
+            <option value="Draft">Draft</option>
+            <option value="Open">Open</option>
+            <option value="Shpiped">Shpiped</option>
+          </select>
+          Due Date : <input id="Due_start" name="Due_start" type="date" class="date" style="font-size: 10px; width: 60px;">
+          <a  style="float: right;">Search: <input id="filter" type="text"/></a>
+        </p>
+      </div>
+    
+      <table id="example2" class="table table-bordered table-striped">
+         <thead>          
+            <tr style="text-align: center;">
+                <th style="width: 15%; font-size: 12px;">invoice No.</th>
+                <th style="width: 15%; font-size: 12px;">PO Ref No.</th>
+                <th style="width: 10%; font-size: 12px;">Due Date</th>
+                <th style="width: 15%; font-size: 12px;">Gross Amount</th>
+                <th style="width: 15%; font-size: 12px;">Net Amount Due</th>
+                <th style="width: 10%; font-size: 12px;">Currency</th>
+                <th style="width: 10%; font-size: 12px;">Status</th>
+                <th style="width: 10%; font-size: 12px;">Download</th>
+            </tr>
+         </thead>    
+         <tbody style="text-align: center;">
+    
+            <tr style="background-color: white;">
+              <td><a href="#">123456</a></td>
+              <td><a href="#">PO-123456</a></td>
+              <td>12/20/2017</td>
+              <td>3000.00</td>
+              <td>3000.00</td>
+              <td>GBP</td>
+              <td>Open</td>
+              <td style="text-align: center;"><a href="" ><i class="fas fa-download" ></i></a></td>
+            </tr>
+            <tr style="background-color: white;">
+              <td><a href="#">123456</a></td>
+              <td><a href="#">PO-123456</a></td>
+              <td>12/20/2017</td>
+              <td>3000.00</td>
+              <td>3000.00</td>
+              <td>GBP</td>
+              <td>Open</td>
+              <td style="text-align: center;"><a href="" ><i class="fas fa-download" ></i></a></td>
+            </tr>
+            <tr style="background-color: white;">
+              <td><a href="#">123456</a></td>
+              <td><a href="#">PO-123456</a></td>
+              <td>12/20/2017</td>
+              <td>3000.00</td>
+              <td>3000.00</td>
+              <td>GBP</td>
+              <td>Open</td>
+              <td style="text-align: center;"><a href="" ><i class="fas fa-download" ></i></a></td>
+            </tr>
+          </tbody>    
+      </table>      
+    </div>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+  
+
